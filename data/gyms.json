@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Blaine City Hall",
+    "longitude": 45.165882,
+    "latitude": -93.208661
+  },
+  {
+    "name": "Deacons Park Playground",
+    "longitude": 45.172638,
+    "latitude": -93.222184
+  },
+  {
+    "name": "Schwan Super Rink Mural",
+    "longitude": 45.158106,
+    "latitude": -93.223547
+  },
+  {
+    "name": "NSC Campus Map",
+    "longitude": 45.166034,
+    "latitude": -93.22737
+  },
+  {
+    "name": "Hajime Japanese Restaurant",
+    "longitude": 45.169483,
+    "latitude": -93.231192
+  },
+  {
+    "name": "Trees Edge Park",
+    "longitude": 45.176914,
+    "latitude": -93.226904
+  },
+  {
+    "name": "The Greens Gazebo",
+    "longitude": 45.1753,
+    "latitude": -93.231449
+  },
+  {
+    "name": "Lakeside Gazebo",
+    "longitude": 45.17946,
+    "latitude": -93.22883
+  },
+  {
+    "name": "Blaine VFW",
+    "longitude": 45.167886,
+    "latitude": -93.23657
+  },
+  {
+    "name": "Historical Gasoline Alley",
+    "longitude": 45.158019,
+    "latitude": -93.235841
+  },
+  {
+    "name": "The Well",
+    "longitude": 45.182561,
+    "latitude": -93.191219
+  },
+  {
+    "name": "The Lakes - Tree Branch Fun",
+    "longitude": 45.186235,
+    "latitude": -93.199763
+  },
+  {
+    "name": "Kingswood Cross",
+    "longitude": 45.167497,
+    "latitude": -93.238984
+  },
+  {
+    "name": "Confused Child",
+    "longitude": 45.188783,
+    "latitude": -93.199601
+  },
+  {
+    "name": "The Lakes - Shoeless Kids",
+    "longitude": 45.185594,
+    "latitude": -93.189409
+  },
+  {
+    "name": "Jim Peterson Athletic Complex",
+    "longitude": 45.193355,
+    "latitude": -93.209063
+  },
+  {
+    "name": "Blaine Walking Trailhead Map",
+    "longitude": 45.167986,
+    "latitude": -93.248503
+  },
+  {
+    "name": "Oak Park Community Church",
+    "longitude": 45.188512,
+    "latitude": -93.232806
+  },
+  {
+    "name": "Ivy Hills Park Pavilion",
+    "longitude": 45.191991,
+    "latitude": -93.225638
+  },
+  {
+    "name": "Lakeside Commons Park",
+    "longitude": 45.1931,
+    "latitude": -93.193889
+  },
+  {
+    "name": "The Lakes East Lake Park Shelter",
+    "longitude": 45.189775,
+    "latitude": -93.184117
+  },
+  {
+    "name": "Chain of Lakes Church",
+    "longitude": 45.195413,
+    "latitude": -93.201006
+  },
+  {
+    "name": "Quincy Park",
+    "longitude": 45.163422,
+    "latitude": -93.251639
+  },
+  {
+    "name": "Eaglebrook Church",
+    "longitude": 45.143207,
+    "latitude": -93.179322
+  },
+  {
+    "name": "Pioneer Park Entrance",
+    "longitude": 45.197286,
+    "latitude": -93.206317
+  },
+  {
+    "name": "Centennial Green Park",
+    "longitude": 45.151872,
+    "latitude": -93.167277
+  },
+  {
+    "name": "Blaine Baseball Complex",
+    "longitude": 45.191233,
+    "latitude": -93.24049
+  },
+  {
+    "name": "Rendova Park",
+    "longitude": 45.193885,
+    "latitude": -93.179863
+  },
+  {
+    "name": "Blaine Water Tower",
+    "longitude": 45.191722,
+    "latitude": -93.241811
+  },
+  {
+    "name": "Aquatore Park",
+    "longitude": 45.137299,
+    "latitude": -93.237466
+  },
+  {
+    "name": "Memorial Fountain",
+    "longitude": 45.195654,
+    "latitude": -93.235497
+  },
+  {
+    "name": "Dr. Thomas 'Tom' Bloss Memorial Stone",
+    "longitude": 45.137706,
+    "latitude": -93.239406
+  },
+  {
+    "name": "Lexington Memorial Park Pavilion",
+    "longitude": 45.137878,
+    "latitude": -93.176639
+  },
+  {
+    "name": "Bridgewood Iron Cross",
+    "longitude": 45.182109,
+    "latitude": -93.163173
+  },
+  {
+    "name": "Territorial Park",
+    "longitude": 45.158225,
+    "latitude": -93.25856
+  },
+  {
+    "name": "Northwood Park",
+    "longitude": 45.189182,
+    "latitude": -93.247593
+  },
+  {
+    "name": "Lochness Park",
+    "longitude": 45.171472,
+    "latitude": -93.157781
+  },
+  {
+    "name": "Lexington Memorial Park",
+    "longitude": 45.13872,
+    "latitude": -93.174121
+  },
+  {
+    "name": "Cloverleaf Park",
+    "longitude": 45.149757,
+    "latitude": -93.25502
+  },
+  {
+    "name": "Blaine Watertower",
+    "longitude": 45.13619,
+    "latitude": -93.238874
+  },
+  {
+    "name": "Broken Oaks Park",
+    "longitude": 45.200344,
+    "latitude": -93.226686
+  },
+  {
+    "name": "Pioneer Park Metal Trail Signs",
+    "longitude": 45.203286,
+    "latitude": -93.207688
+  },
+  {
+    "name": "Tree of Life Church",
+    "longitude": 45.138926,
+    "latitude": -93.170617
+  },
+  {
+    "name": "Van Buren Park",
+    "longitude": 45.141632,
+    "latitude": -93.250701
+  },
+  {
+    "name": "The Door Covenant Church",
+    "longitude": 45.197973,
+    "latitude": -93.238892
+  },
+  {
+    "name": "Fort Lions Park",
+    "longitude": 45.168196,
+    "latitude": -93.263419
+  },
+  {
+    "name": "Oak Creek Park",
+    "longitude": 45.192832,
+    "latitude": -93.248515
+  },
+  {
+    "name": "Circle Pines Sausage Haus",
+    "longitude": 45.135994,
+    "latitude": -93.171357
+  },
+  {
+    "name": "North Star Park",
+    "longitude": 45.150295,
+    "latitude": -93.155798
+  },
+  {
+    "name": "East Side Park",
+    "longitude": 45.164186,
+    "latitude": -93.150615
+  },
+  {
+    "name": "Carbone's Pizza",
+    "longitude": 45.139181,
+    "latitude": -93.164056
+  },
+  {
+    "name": "Armed Forces Memorial",
+    "longitude": 45.169234,
+    "latitude": -93.267164
+  },
+  {
+    "name": "King of Glory Lutheran Church",
+    "longitude": 45.15319,
+    "latitude": -93.265142
+  },
+  {
+    "name": "Peace Lutheran Church",
+    "longitude": 45.168685,
+    "latitude": -93.267807
+  },
+  {
+    "name": "Our Savior's",
+    "longitude": 45.1385,
+    "latitude": -93.163364
+  },
+  {
+    "name": "Circle Pines Labyrinth",
+    "longitude": 45.141283,
+    "latitude": -93.160179
+  },
+  {
+    "name": "Sonlight Church",
+    "longitude": 45.131347,
+    "latitude": -93.1726
+  },
+  {
+    "name": "Happy Acres Playground and Ball Field",
+    "longitude": 45.187608,
+    "latitude": -93.261669
+  },
+  {
+    "name": "Circle Pines Post Office",
+    "longitude": 45.144728,
+    "latitude": -93.154189
+  },
+  {
+    "name": "Laddie Lake Trail Map",
+    "longitude": 45.128752,
+    "latitude": -93.242567
+  },
+  {
+    "name": "Golden Lake Farm Park",
+    "longitude": 45.143485,
+    "latitude": -93.154445
+  },
+  {
+    "name": "Westwood Park",
+    "longitude": 45.130681,
+    "latitude": -93.248104
+  },
+  {
+    "name": "Eagle Brook Church",
+    "longitude": 45.123977,
+    "latitude": -93.231832
+  }
+]
