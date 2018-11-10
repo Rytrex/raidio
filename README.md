@@ -3,8 +3,13 @@
 This is a Discord Bot that allows users to report raids
 
 ### Setup
-`npm install`
-`npm run serve`
+##### Prerequisites 
+Node.js `v6.X.X+`
+
+##### Running the application
+`npm install`: To install dependencies.
+
+`npm run serve`: To compile code and start up the application.
 
 ### Commands
 `!raid [tier] [hatchTime] [location]`: Allows a user to report Raid that has not hatched yet.

@@ -1,13 +1,14 @@
-import { Command } from "../command";
-import { UnhatchedRaidData, HatchedRaidData } from "../../data-types/raid-data";
-import { Gym } from "../../data-types/gym";
-import { Pokemon } from "../../data-types/pokemon";
-import { RichEmbed } from "discord.js";
+import { Command } from '../command';
+import { UnhatchedRaidData, HatchedRaidData } from '../../data-types/raid-data';
+import { Gym } from '../../data-types/gym';
+import { Pokemon } from '../../data-types/pokemon';
+import { RichEmbed } from 'discord.js';
 
 import * as bosses from '../../../data/raidBoss.json';
 
 export class RaidCommand extends Command {
     private data: UnhatchedRaidData | HatchedRaidData;
+    public hatchedData = false;
 
     constructor(params: string[]) {
         super();
@@ -42,19 +43,18 @@ export class RaidCommand extends Command {
 
         if ((<UnhatchedRaidData>this.data).tier) {
             let unhatchedData = (<UnhatchedRaidData>this.data);
-            unhatchedData.end = this.toReadableDate(unhatchedData.hatchTime);
 
             this.embed = this.embed
                 .setColor('GOLD')
                 .setTitle(`Tier ${unhatchedData.tier} Raid`)
-                .setDescription(`Hatch Time: ${unhatchedData.end}\nPossible Pokemon: ${bosses[unhatchedData.tier].join(', ')}`);
+                .setDescription(`Hatch Time: ${this.toReadableTime(unhatchedData.hatchTime)}\nPossible Pokemon: ${bosses[unhatchedData.tier].join(', ')}`);
         } else {
             let hatchedData = (<HatchedRaidData>this.data);
-            hatchedData.end = this.toReadableDate(hatchedData.endTime);
+            this.hatchedData = true;
 
             this.embed = this.embed.setColor('RED')
                 .setTitle(`${hatchedData.boss.name} Raid`)
-                .setDescription(`End Time: ${hatchedData.end}\nCounter Types: ${hatchedData.boss.counterTypes}`);
+                .setDescription(`End Time: ${this.toReadableTime(hatchedData.endTime)}\nCounter Types: ${hatchedData.boss.counterTypes}`);
         }
 
         return this.embed

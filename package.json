@@ -15,7 +15,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "serve": "tsc && node dist/src/bot.js"
+    "serve": "tsc && node dist/src/bot.js",
+    "lint": "tslint src/**/*.ts"
   },
   "author": "",
   "license": "ISC"
