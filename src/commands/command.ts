@@ -15,8 +15,12 @@ export abstract class Command {
 
         let postMidday = timeCommand[1].includes('p');
         let hours = Number.parseInt(timeCommand[0]);
-        let minutes = Number.parseInt(timeCommand[1].slice(0, 1));
+        let minutes = Number.parseInt(timeCommand[1].slice(0, 2));
+        
+        return new Date(dateTime.setHours(hours + (postMidday ? 12 : 0), minutes, 0));
+    }
 
-        return new Date(dateTime.setHours(hours + (postMidday ? 12 : 0), minutes));
+    protected toReadableDate(date: Date): string {
+        return date.toLocaleDateString() + ' | ' + date.toLocaleTimeString('en-US');
     }
 }

@@ -15,7 +15,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "tsc && node dist/src/bot.js"
   },
   "author": "",
   "license": "ISC"

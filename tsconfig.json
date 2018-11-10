@@ -1,8 +1,8 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
-        "module": "amd",
-        "outFile": "index.js",
+        "module": "commonjs",
+        "outDir": "dist/",
         "sourceMap": false,
         "declaration": false,
         "moduleResolution": "node",
@@ -13,5 +13,5 @@
         "lib": ["es2016"],
         "resolveJsonModule": true
     },
-    "include": ["./src/bot.ts"]
+    "include": ["./src/**/*"]
 }

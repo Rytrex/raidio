@@ -24,7 +24,7 @@ export class Gym {
         } else if (gymSearch.length === 0) {
             this.errorMessage = 'Unable to find Gym.'
         } else {
-            Object.assign(gymSearch[0]);
+            Object.assign(this, gymSearch[0]);
         }
     }
 }

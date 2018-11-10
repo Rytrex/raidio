@@ -2,6 +2,10 @@
 
 This is a Discord Bot that allows users to report raids
 
+### Setup
+`npm install`
+`npm run serve`
+
 ### Commands
 `!raid [tier] [hatchTime] [location]`: Allows a user to report Raid that has not hatched yet.
 * `tier`: A number 1 to 5. Can include Asterisk.

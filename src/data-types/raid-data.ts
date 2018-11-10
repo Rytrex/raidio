@@ -5,6 +5,8 @@ export abstract class RaidData {
     public location: Gym;
     public timeout: number;
     public thumbnail: string;
+    // string version of hatch time or end time
+    public end: string;
     public errorMessage = '';
 
     constructor() {}
@@ -41,7 +43,7 @@ export class UnhatchedRaidData extends RaidData {
     }
 
     private checkDataValidity(): void {
-        let timeDifference = Date.now() - this.hatchTime.getTime();
+        let timeDifference = this.hatchTime.getTime() - Date.now();
 
         if (this.tier < 1 || this.tier > 5) {
             this.errorMessage += 'Invalid tier number.'
@@ -75,12 +77,12 @@ export class HatchedRaidData extends RaidData {
     }
 
     private setThumbnail(pokemon: Pokemon): void {
-        let imgName = pokemon.name + (pokemon.form ? '-' + pokemon.form : '')
+        let imgName = (pokemon.name + (pokemon.form ? '-' + pokemon.form : '')).toLowerCase();
         this.thumbnail = `http://www.pokestadium.com/sprites/xy/${imgName}.gif`
     }
 
     private checkDataValidity(): void {
-        let timeDifference = Date.now() - this.endTime.getTime();
+        let timeDifference = this.endTime.getTime() - Date.now();
 
         if (!this.boss.name) {
             this.errorMessage += 'No Pokemon found with that name.'

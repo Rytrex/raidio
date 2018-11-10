@@ -11,7 +11,7 @@ export class RaidCommand extends Command {
 
     constructor(params: string[]) {
         super();
-        this.convertToData(params.slice(1));
+        this.convertToData(params);
     }
 
     public get timeout(): number {
@@ -29,7 +29,7 @@ export class RaidCommand extends Command {
         } else {
             this.data = new HatchedRaidData({
                 boss: new Pokemon(params[0]),
-                hatchTime: this.timeConversion(params[1]),
+                endTime: this.timeConversion(params[1]),
                 location: new Gym(params.slice(2).join(' '))
             });
         }
@@ -42,15 +42,19 @@ export class RaidCommand extends Command {
 
         if ((<UnhatchedRaidData>this.data).tier) {
             let unhatchedData = (<UnhatchedRaidData>this.data);
+            unhatchedData.end = this.toReadableDate(unhatchedData.hatchTime);
+
             this.embed = this.embed
                 .setColor('GOLD')
                 .setTitle(`Tier ${unhatchedData.tier} Raid`)
-                .setDescription(`Hatch Time: ${unhatchedData.hatchTime}\nPossible Pokemon: ${bosses[unhatchedData.tier].join(', ')}`);
+                .setDescription(`Hatch Time: ${unhatchedData.end}\nPossible Pokemon: ${bosses[unhatchedData.tier].join(', ')}`);
         } else {
-            let hatchedData = (<HatchedRaidData>this.data)
+            let hatchedData = (<HatchedRaidData>this.data);
+            hatchedData.end = this.toReadableDate(hatchedData.endTime);
+
             this.embed = this.embed.setColor('RED')
                 .setTitle(`${hatchedData.boss.name} Raid`)
-                .setDescription(`End Time: ${hatchedData.endTime}\nCounter Types: ${hatchedData.boss.counterTypes}`);
+                .setDescription(`End Time: ${hatchedData.end}\nCounter Types: ${hatchedData.boss.counterTypes}`);
         }
 
         return this.embed
