@@ -1,10 +1,17 @@
 {
   "name": "raidio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pokemon GO Raid Bot",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/drewhagen/pogo-raid-report-bot.git"
+  },
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "@types/node": "^10.12.5",
+    "discord.js": "^11.4.2",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
   },
   "devDependencies": {},
   "scripts": {

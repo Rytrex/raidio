@@ -1,0 +1,17 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "module": "amd",
+        "outFile": "index.js",
+        "sourceMap": false,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "typeRoots": ["node_modules/@types", "discord.js"],
+        "lib": ["es2016"],
+        "resolveJsonModule": true
+    },
+    "include": ["./src/bot.ts"]
+}
