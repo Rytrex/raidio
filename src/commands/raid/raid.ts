@@ -49,12 +49,13 @@ export class RaidCommand extends Command {
                 .setTitle(`Tier ${unhatchedData.tier} Raid`)
                 .setDescription(`Hatch Time: ${this.toReadableTime(unhatchedData.hatchTime)}\nPossible Pokemon: ${bosses[unhatchedData.tier].join(', ')}`);
         } else {
+            let ivs = {atk: 15, def: 15, sta: 15};
             let hatchedData = (<HatchedRaidData>this.data);
             this.hatchedData = true;
 
             this.embed = this.embed.setColor('RED')
                 .setTitle(`${hatchedData.boss.name} Raid`)
-                .setDescription(`End Time: ${this.toReadableTime(hatchedData.endTime)}\nCounter Types: ${hatchedData.boss.counterTypes}`);
+                .setDescription(`End Time: ${this.toReadableTime(hatchedData.endTime)}\nMax Catch CP: ${hatchedData.boss.getCP(20, ivs)} | ${hatchedData.boss.getCP(25, ivs)}`);
         }
 
         return this.embed
