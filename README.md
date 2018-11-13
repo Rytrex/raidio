@@ -28,6 +28,6 @@ Node.js `v6.X.X+`
 * `location`: Any gym name
   * **Examples**: `territorial`, `VFW`, `Blaine baseball Complex`, `door Covenant`
 
-`!info [pokemon]: Allows a user to receive more information on a Pokemon
+`!info [pokemon]`: Allows a user to receive more information on a Pokemon
 * `pokemon`: Any current raid boss Pokemon name 
   * **Examples**: `pikachu`, `Tyranitar`, `lotad`, `Empoleon`
