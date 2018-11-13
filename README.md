@@ -21,9 +21,13 @@ Node.js `v6.X.X+`
   * **Examples**: `territorial`, `VFW`, `Blaine baseball Complex`, `door Covenant`
   
 `!raid [pokemon] [endTime] [location]`: Allows a user to report Raid that has hatched.
-* `tier`: Any current raid boss Pokemon name 
+* `pokemon`: Any current raid boss Pokemon name 
   * **Examples**: `pikachu`, `Tyranitar`, `lotad`, `Empoleon`
-* `hatchTime`: Time within 45 minutes. Must include `a` or `p`. 
+* `endTime`: Time within 45 minutes. Must include `a` or `p`. 
   * **Examples**: `1:00a`, `6:45p`, `10:10am`, `3:38pm`
 * `location`: Any gym name
   * **Examples**: `territorial`, `VFW`, `Blaine baseball Complex`, `door Covenant`
+
+`!info [pokemon]: Allows a user to receive more information on a Pokemon
+* `pokemon`: Any current raid boss Pokemon name 
+  * **Examples**: `pikachu`, `Tyranitar`, `lotad`, `Empoleon`
