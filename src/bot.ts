@@ -1,4 +1,5 @@
 import { RaidCommand } from './commands/raid/raid';
+import { InfoCommand } from './commands/info/info';
 import * as Discord from 'discord.js';
 
 let bot = new Discord.Client();
@@ -28,6 +29,10 @@ bot.on('message', (message) => {
                     });
                     console.log('Successful Raid Command received: ' + params.join(' '));
                 }
+            } else if (command === '!info') {
+                let info = new InfoCommand(params[0]);
+                message.channel.send(info.buildRichEmbed);
+                console.log('Successful Info Command received: ' + params.join(' '));
             }
         }
         if (message.embeds.length > 0) {
@@ -37,16 +42,17 @@ bot.on('message', (message) => {
                     if (/Tier.*Raid/.test(message.embeds[0].title)) {
                         // TODO generate new raid embed
                     } else if (/.*Raid/.test(message.embeds[0].title)) {
-                        // TODO generate info embed and send to user
-                        reaction.users.last().send(message.embeds[0].title + 'information to be implimented');
+                        console.log(message.embeds[0].title.split(' ')[0]);
+                        let cmd = new InfoCommand('Bulbasaur');
+                        reaction.users.last().send(cmd.buildRichEmbed);
                     }
                 }
-                
+
                 return true;
             });
         }
     }
 });
-// user => user.createDM()
+
 bot.login('MzQ2NDIxMTg4NTg0NTM4MTEy.DsOijA.TgCls5FKxoRoFXvPBjcST8LL9XI');
 console.log('Juiz has booted up.');

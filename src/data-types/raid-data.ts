@@ -44,7 +44,7 @@ export class UnhatchedRaidData extends RaidData {
     }
 
     private checkDataValidity(): void {
-        let timeTillHatch = this.timeout; //- 3_600_000;
+        let timeTillHatch = this.timeout; // - 3_600_000;
 
         if (this.tier < 1 || this.tier > 5) {
             this.errorMessage += 'Invalid tier number.';

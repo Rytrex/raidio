@@ -55,7 +55,7 @@ export class RaidCommand extends Command {
 
             this.embed = this.embed.setColor('RED')
                 .setTitle(`${hatchedData.boss.name} Raid`)
-                .setDescription(`End Time: ${this.toReadableTime(hatchedData.endTime)}\nMax Catch CP: ${hatchedData.boss.getCP(20, ivs)} | ${hatchedData.boss.getCP(25, ivs)}`);
+                .setDescription(`End Time: ${this.toReadableTime(hatchedData.endTime)}\nMax Catch CP: ${hatchedData.boss.getCP(20, ivs)} | ☼${hatchedData.boss.getCP(25, ivs)}`);
         }
 
         return this.embed
